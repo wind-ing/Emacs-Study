@@ -1,0 +1,64 @@
+# -*- mode: org; -*-
+
+# 如果不能正常访问 github，将整个项目下载到一个文件夹，然后将要书写的 org 文档放到此文件夹中，并如下写上需要的代码。
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="src/readtheorg_theme/css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="src/readtheorg_theme/css/readtheorg.css"/>
+
+#+HTML_HEAD: <script type="text/javascript" src="src/lib/js/jquery.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="src/lib/js/bootstrap.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="src/lib/js/jquery.stickytableheaders.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="src/readtheorg_theme/js/readtheorg.js"></script>
+# 以上 6 行原样复制到新 org 文档的开始部分，即可在本地使用 CSS 和 JS 代码
+
+#+HTML_HEAD: <style>pre.src{background:#343131;color:white;} </style>
+
+# no default toc at all
+#+OPTIONS: p:2
+
+# only number at level 2
+#+OPTIONS: H:3 ^:nil num:nil toc:nil timestamp:nil
+
+#+TITLE: lab2
+#+AUTHOR: GZ
+
+* 1 观察HEADLINRE结构
+** Second level
+*** Third level
+    some text
+*** Third level
+    more text
+
+* 2 编写windbg文档
+| Name | Major              | Grade |
+|------+--------------------+-------|
+| GZ   | Information safety |  2018 |
+
+
+** 一、实验题目
+   Windbg查看导入表和导出表
+** 二、实验目的
+   掌握windbg的常用命令，并使用windbg查看导入表和导出表
+** 三、实验环境
+   win10、windbg
+
+
+*** 3. 插入图片和超级链接
+[[file:figures/ptepae.gif][这是图片名称，点击此链接在新窗口打开图片]]
+
+[[file:figures/ptepae.gif]]
+
+这是到[[https://www.baidu.com][百度]]的链接
+
+*** 4. 第三方插件导出带有 CSS 样式的 html 文件
+
+: 用 EMACS 打开此文件的源文件 lab.org ，在最开始的注释部分写明如何使用本文档的插件
+
+*** 5. 用 EMACS 的 ORGMODE 编写 WINDBG 实验文档
+
+: 提示： 导出 html 文档命令 C-c C-e h h
+: 注意插入适当图片、超级链接等
+: 凡是有疑问的、或是不会使用 ORGMODE 的，打开此文档源代码进行参考
+
+*** 6. 选做：将导出的 html 文档发布到 github 上
+**** a) 将文档保存到 github
+**** b) 将导出的 html 进行发布
